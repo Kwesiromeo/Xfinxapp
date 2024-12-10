@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellent Financial Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div class="login-container" id="login-screen">
+            <h2>Welcome to Excellent Financial Services</h2>
+            <form id="login-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Main Screen -->
+        <div class="main-container hidden" id="main-screen">
+            <h2>Welcome, <span id="user-name"></span>!</h2>
+            <p>Your Account Balance: <span id="account-balance">0</span> GHS</p>
+            <div class="buttons">
+                <button id="save-button">Save</button>
+                <button id="withdraw-button">Withdraw</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
